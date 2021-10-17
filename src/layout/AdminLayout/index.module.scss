@@ -1,0 +1,67 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100vw;
+  min-width: 960px;
+  height: 100vh;
+  color: var(--text-primary-color);
+
+  .asider {
+    width: var(--aside-width);
+    background: #001529;
+    height: 100%;
+    overflow: auto;
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      margin-top: 16px;
+      font-size: 1.2rem;
+      text-align: center;
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    .resourceCreate {
+      padding: 0 var(--aside-padding-horizontal);
+      margin: 12px 0;
+    }
+  }
+
+  .main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 100%;
+    background-color: #eff2f5;
+    overflow: auto;
+
+    >header {
+      width: 100%;
+      padding: 16px;
+      border-bottom: 1px solid var(--border-color);
+      background: #ffffff;
+
+      .info {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        cursor: pointer;
+
+        .github {
+          display: flex;
+          align-items: center;
+          margin-right: 12px;
+          color: inherit;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
